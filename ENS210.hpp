@@ -36,7 +36,7 @@ public:
 	
 	/*
 	 * REG PART_ID:
-	 * Identifies the part as ENS210 
+	 * Identifies the part as ENS210
 	 */
 	struct PART_ID
 	{
@@ -72,7 +72,7 @@ public:
 	
 	/*
 	 * REG UID:
-	 * This 8 byte register uniquely identifies a single device among all ENS210 devices. 
+	 * This 8 byte register uniquely identifies a single device among all ENS210 devices.
 	 */
 	struct UID
 	{
@@ -107,7 +107,7 @@ public:
 	
 	/*
 	 * REG SYS_CTRL:
-	 * System configuration 
+	 * System configuration
 	 */
 	struct SYS_CTRL
 	{
@@ -160,7 +160,7 @@ public:
 	
 	/*
 	 * REG SYS_STAT:
-	 * System status 
+	 * System status
 	 */
 	struct SYS_STAT
 	{
@@ -204,7 +204,7 @@ public:
 	
 	/*
 	 * REG SENS_RUN:
-	 * The run mode (single shot or continuous) 
+	 * The run mode (single shot or continuous)
 	 */
 	struct SENS_RUN
 	{
@@ -257,7 +257,7 @@ public:
 	
 	/*
 	 * REG SENS_START:
-	 * Start measurement 
+	 * Start measurement
 	 */
 	struct SENS_START
 	{
@@ -306,7 +306,7 @@ public:
 	
 	/*
 	 * REG SENS_STOP:
-	 * Stop continuous measurement 
+	 * Stop continuous measurement
 	 */
 	struct SENS_STOP
 	{
@@ -355,7 +355,7 @@ public:
 	
 	/*
 	 * REG SENS_STAT:
-	 * Sensor status (idle or measuring) 
+	 * Sensor status (idle or measuring)
 	 */
 	struct SENS_STAT
 	{
@@ -370,7 +370,7 @@ public:
 		/* Bits H_STAT: */
 		/*
 		 * Indicates the measuring status of the relative humidity sensor
-		 *           Write a 1 to stop a continuous relative humidity sensor measurement. 
+		 * Write a 1 to stop a continuous relative humidity sensor measurement.
 		 */
 		struct H_STAT
 		{
@@ -382,7 +382,7 @@ public:
 		/* Bits T_STAT: */
 		/*
 		 * The run mode of the temperature sensor.
-		 *           Write a 1 to stop a continuous temperature sensor measurement. 
+		 * Write a 1 to stop a continuous temperature sensor measurement.
 		 */
 		struct T_STAT
 		{
@@ -415,9 +415,9 @@ public:
 	/*
 	 * REG T_VAL:
 	 * This 3 byte register contains the last measured temperature data. Furthermore it has a
-	 *       data valid flag and a CRC over the former two. Note that these bytes are double buffered;
-	 *       they are latched in by accessing the first byte, see The Sensor Readout Registers for
-	 *       details. 
+	 * data valid flag and a CRC over the former two. Note that these bytes are double buffered;
+	 * they are latched in by accessing the first byte, see The Sensor Readout Registers for
+	 * details.
 	 */
 	struct T_VAL
 	{
@@ -465,9 +465,9 @@ public:
 	/*
 	 * REG H_VAL:
 	 * This 3 byte register contains the last measured relative humidity data. Furthermore it
-	 *      has a data valid flag and a CRC over the former two. Note that these bytes are double
-	 *      buffered; they are latched in by accessing the first byte, see The Sensor Readout Registers
-	 *      for details. 
+	 * has a data valid flag and a CRC over the former two. Note that these bytes are double
+	 * buffered; they are latched in by accessing the first byte, see The Sensor Readout Registers
+	 * for details.
 	 */
 	struct H_VAL
 	{
